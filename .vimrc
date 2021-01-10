@@ -1,5 +1,3 @@
-set nocompatible
-filetype off
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -8,13 +6,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " All of your Plugins must be added before the following line
 
-Plugin 'Vimjas/vim-python-pep8-indent'
-
-call vundle#end()            " required
-
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+call vundle#end()            " required
 filetype plugin indent on
 " The rest of your config follows here
 
