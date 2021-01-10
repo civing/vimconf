@@ -1,7 +1,21 @@
 set nocompatible
 filetype off
-filetype plugin indent on
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" All of your Plugins must be added before the following line
+
+Plugin 'Vimjas/vim-python-pep8-indent'
+
+call vundle#end()            " required
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+filetype plugin indent on
 " The rest of your config follows here
 
 inoremap  <Up>     <NOP>
@@ -12,11 +26,6 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
-
-" Powerline setup
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
-set laststatus=2
-set term=xterm-256color
 
 " Pymode setup
 set completeopt=menu
