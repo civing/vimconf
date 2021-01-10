@@ -9,6 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Python plugins
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'dense-analysis/ale'
 Plugin 'davidhalter/jedi-vim'
@@ -25,12 +26,6 @@ noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
-
-" Pymode setup
-set completeopt=menu
-let g:pymode_folding=0
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_python = 'python3'
 
 set number
 " set nowrap
