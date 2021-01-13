@@ -55,3 +55,6 @@ autocmd BufWritePre *.rtlogpkg :%s/\s\+$//e
 autocmd BufWritePre *.sml :%s/\s\+$//e
 
 set noswapfile
+
+" Always show statusline
+set laststatus=2
