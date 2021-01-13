@@ -1,3 +1,7 @@
-setlocal tabstop=4
-setlocal shiftwidth=4
-setlocal cino=(0,W4
+" Show marker for maximum line width
+set colorcolumn=101
+
+set expandtab
+set tabstop=2
+set softtabstop=0
+set shiftwidth=2
