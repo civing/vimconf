@@ -15,11 +15,20 @@ call plug#begin()
 " Syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
+" Lint
+Plug 'dense-analysis/ale'
+
+" Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Initialize plugin system
 call plug#end()
 
 filetype plugin indent on
 " The rest of your config follows here
+
+let g:ale_sign_error = '😡'
+let g:ale_sign_warning = '😟'
 
 inoremap  <Up>     <NOP>
 inoremap  <Down>   <NOP>
@@ -61,3 +70,5 @@ set noswapfile
 
 " Always show statusline
 set laststatus=2
+
+so ~/.vim/coc.vim
