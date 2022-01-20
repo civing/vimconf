@@ -1,21 +1,23 @@
 set nocompatible              " be iMproved, required
 set backspace=indent,eol,start
 filetype off                  " required
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" All of your Plugins must be added before the following line
+" Make sure you use single quotes
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Syntax highlighting
+Plug 'sheerun/vim-polyglot'
 
-" Python plugins
-Plugin 'Vimjas/vim-python-pep8-indent'
-Plugin 'dense-analysis/ale'
-Plugin 'davidhalter/jedi-vim'
+" Initialize plugin system
+call plug#end()
 
-call vundle#end()            " required
 filetype plugin indent on
 " The rest of your config follows here
 
